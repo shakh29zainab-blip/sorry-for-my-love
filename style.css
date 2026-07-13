@@ -1,1 +1,1032 @@
-style.css
+/* ===========================
+   GOOGLE FONT
+=========================== */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+
+font-family:'Poppins',sans-serif;
+
+background:linear-gradient(180deg,#fff8f5,#fdeeee,#fff8f1);
+
+color:#6d4b4b;
+
+overflow-x:hidden;
+
+min-height:100vh;
+
+}
+
+
+/* ===========================
+BACKGROUND
+=========================== */
+
+.bg{
+
+position:fixed;
+
+top:0;
+
+left:0;
+
+width:100%;
+
+height:100%;
+
+background:
+radial-gradient(circle at top,#fffaf7,#fde8e8,#fef7f2);
+
+z-index:-5;
+
+}
+
+
+/* ===========================
+FAIRY LIGHTS
+=========================== */
+
+.lights{
+
+position:fixed;
+
+top:0;
+
+left:0;
+
+width:100%;
+
+height:120px;
+
+background-image:
+
+radial-gradient(#fff 2px,transparent 3px),
+
+radial-gradient(#ffdcdc 3px,transparent 4px),
+
+radial-gradient(#ffe8d9 2px,transparent 3px);
+
+background-size:
+
+70px 70px,
+
+90px 90px,
+
+110px 110px;
+
+opacity:.55;
+
+z-index:-2;
+
+}
+
+
+/* ===========================
+FLOWERS
+=========================== */
+
+.flower{
+
+position:fixed;
+
+font-size:38px;
+
+opacity:.85;
+
+z-index:-1;
+
+}
+
+.tl{
+
+top:20px;
+
+left:20px;
+
+}
+
+.tr{
+
+top:20px;
+
+right:20px;
+
+}
+
+.bl{
+
+bottom:20px;
+
+left:20px;
+
+}
+
+.br{
+
+bottom:20px;
+
+right:20px;
+
+}
+
+
+/* ===========================
+MAIN CONTAINER
+=========================== */
+
+.container{
+
+max-width:1180px;
+
+margin:auto;
+
+padding:60px 25px;
+
+}
+
+
+/* ===========================
+HEADER
+=========================== */
+
+.top-title{
+
+text-align:center;
+
+margin-bottom:60px;
+
+}
+
+.mail{
+
+width:90px;
+
+height:90px;
+
+margin:auto;
+
+background:#fff;
+
+border-radius:50%;
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+font-size:40px;
+
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+margin-bottom:20px;
+
+}
+
+.top-title h1{
+
+font-family:'Playfair Display',serif;
+
+font-size:48px;
+
+color:#c67882;
+
+margin-bottom:12px;
+
+}
+
+.top-title p{
+
+font-size:18px;
+
+color:#8d6666;
+
+line-height:30px;
+
+}
+
+
+/* ===========================
+GRID
+=========================== */
+
+.grid{
+
+display:grid;
+
+grid-template-columns:
+
+repeat(auto-fit,minmax(300px,1fr));
+
+gap:28px;
+
+align-items:start;
+
+}
+/* ===========================
+   CARDS
+=========================== */
+
+.card{
+
+background:rgba(255,255,255,.72);
+
+backdrop-filter:blur(12px);
+
+-webkit-backdrop-filter:blur(12px);
+
+border:1px solid rgba(255,255,255,.65);
+
+border-radius:28px;
+
+padding:28px;
+
+box-shadow:
+
+0 15px 35px rgba(214,171,171,.18),
+
+0 5px 12px rgba(0,0,0,.05);
+
+transition:.35s;
+
+position:relative;
+
+overflow:hidden;
+
+}
+
+
+/* Glow Effect */
+
+.card::before{
+
+content:"";
+
+position:absolute;
+
+top:-70px;
+
+right:-70px;
+
+width:160px;
+
+height:160px;
+
+background:rgba(255,240,240,.55);
+
+border-radius:50%;
+
+}
+
+
+/* Hover */
+
+.card:hover{
+
+transform:translateY(-8px);
+
+box-shadow:
+
+0 25px 50px rgba(214,171,171,.30);
+
+}
+
+
+/* Card Sizes */
+
+.big-card{
+
+grid-column:span 2;
+
+}
+
+.tall-card{
+
+min-height:430px;
+
+}
+
+.image-card{
+
+grid-column:span 2;
+
+}
+
+.final-card{
+
+grid-column:span 2;
+
+}
+
+
+/* ===========================
+CARD NUMBER
+=========================== */
+
+.card-number{
+
+display:inline-block;
+
+padding:8px 18px;
+
+background:#ffe7ea;
+
+color:#d06b79;
+
+border-radius:30px;
+
+font-size:14px;
+
+font-weight:600;
+
+margin-bottom:18px;
+
+}
+
+
+/* ===========================
+HEADINGS
+=========================== */
+
+.card h2{
+
+font-family:'Playfair Display',serif;
+
+font-size:28px;
+
+color:#bf6d7d;
+
+margin-bottom:18px;
+
+line-height:38px;
+
+}
+
+
+/* ===========================
+PARAGRAPH
+=========================== */
+
+.card p{
+
+font-size:16px;
+
+line-height:34px;
+
+color:#7a5d5d;
+
+}
+
+
+/* ===========================
+FINAL MESSAGE
+=========================== */
+
+.final-message{
+
+margin-top:60px;
+
+padding:40px;
+
+background:#fff9f7;
+
+border-radius:30px;
+
+text-align:center;
+
+box-shadow:0 10px 30px rgba(0,0,0,.05);
+
+}
+
+.final-message h2{
+
+font-family:'Playfair Display',serif;
+
+font-size:34px;
+
+color:#c66d80;
+
+margin-bottom:20px;
+
+}
+
+.final-message p{
+
+font-size:17px;
+
+line-height:34px;
+
+color:#7b6262;
+
+margin-bottom:15px;
+
+}
+
+
+/* ===========================
+FOOTER
+=========================== */
+
+footer{
+
+text-align:center;
+
+margin-top:50px;
+
+padding:25px;
+
+color:#9a7474;
+
+font-size:15px;
+
+line-height:28px;
+
+}
+/* ===========================
+   ENVELOPE
+=========================== */
+
+.mail{
+
+position:relative;
+
+overflow:hidden;
+
+background:linear-gradient(145deg,#fffdfc,#ffeef0);
+
+border:2px solid #f8d9df;
+
+}
+
+.mail::before{
+
+content:"";
+
+position:absolute;
+
+width:120%;
+
+height:120%;
+
+background:rgba(255,255,255,.35);
+
+transform:rotate(45deg);
+
+top:-80%;
+
+left:-80%;
+
+transition:.8s;
+
+}
+
+.mail:hover::before{
+
+top:120%;
+
+left:120%;
+
+}
+
+
+/* ===========================
+DECORATIVE FLOWERS
+=========================== */
+
+.flower{
+
+animation:floatFlower 6s ease-in-out infinite;
+
+filter:drop-shadow(0 8px 10px rgba(255,192,203,.25));
+
+}
+
+.tl{
+
+font-size:55px;
+
+transform:rotate(-15deg);
+
+}
+
+.tr{
+
+font-size:48px;
+
+transform:rotate(12deg);
+
+}
+
+.bl{
+
+font-size:52px;
+
+transform:rotate(18deg);
+
+}
+
+.br{
+
+font-size:50px;
+
+transform:rotate(-12deg);
+
+}
+
+
+/* ===========================
+SOFT BLUR CIRCLES
+=========================== */
+
+body::before{
+
+content:"";
+
+position:fixed;
+
+width:260px;
+
+height:260px;
+
+background:#ffe8ec;
+
+border-radius:50%;
+
+filter:blur(70px);
+
+top:-70px;
+
+left:-70px;
+
+z-index:-4;
+
+opacity:.75;
+
+}
+
+body::after{
+
+content:"";
+
+position:fixed;
+
+width:300px;
+
+height:300px;
+
+background:#fff0df;
+
+border-radius:50%;
+
+filter:blur(80px);
+
+bottom:-120px;
+
+right:-120px;
+
+z-index:-4;
+
+opacity:.8;
+
+}
+
+
+/* ===========================
+FAIRY LIGHTS GLOW
+=========================== */
+
+.lights{
+
+animation:twinkle 4s linear infinite;
+
+}
+
+
+/* ===========================
+HEADING STYLE
+=========================== */
+
+.top-title h1{
+
+text-shadow:
+
+0 4px 12px rgba(255,192,203,.35);
+
+letter-spacing:1px;
+
+}
+
+.top-title p{
+
+max-width:620px;
+
+margin:auto;
+
+}
+
+
+/* ===========================
+ANIMATIONS
+=========================== */
+
+@keyframes floatFlower{
+
+0%{
+
+transform:translateY(0px);
+
+}
+
+50%{
+
+transform:translateY(-8px);
+
+}
+
+100%{
+
+transform:translateY(0px);
+
+}
+
+}
+
+@keyframes twinkle{
+
+0%{
+
+opacity:.45;
+
+}
+
+50%{
+
+opacity:.9;
+
+}
+
+100%{
+
+opacity:.45;
+
+}
+}
+/* ===========================
+   MASHA IMAGE GALLERY
+=========================== */
+
+.masha-images{
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+gap:18px;
+
+margin:25px 0;
+
+flex-wrap:wrap;
+
+}
+
+.masha-images img{
+
+width:145px;
+
+height:145px;
+
+object-fit:cover;
+
+border-radius:22px;
+
+background:#fff;
+
+padding:8px;
+
+border:2px solid #ffe4e8;
+
+box-shadow:
+
+0 12px 25px rgba(255,182,193,.28);
+
+transition:.4s ease;
+
+}
+
+.masha-images img:nth-child(2){
+
+transform:translateY(-12px);
+
+}
+
+.masha-images img:hover{
+
+transform:scale(1.08) rotate(-2deg);
+
+box-shadow:
+
+0 18px 35px rgba(255,182,193,.45);
+
+}
+
+
+/* ===========================
+CARD DECORATION
+=========================== */
+
+.card::after{
+
+content:"🤍";
+
+position:absolute;
+
+bottom:18px;
+
+right:20px;
+
+font-size:24px;
+
+opacity:.15;
+
+}
+
+
+/* ===========================
+FINAL MESSAGE
+=========================== */
+
+.final-message{
+
+position:relative;
+
+overflow:hidden;
+
+background:linear-gradient(
+
+180deg,
+
+#fffdfd
+/* ===========================
+   BUTTON
+=========================== */
+
+.forgive-btn{
+
+display:inline-block;
+
+margin-top:25px;
+
+padding:15px 40px;
+
+border:none;
+
+border-radius:50px;
+
+background:linear-gradient(135deg,#f8b7c4,#f5d8c6);
+
+color:#7a4d58;
+
+font-size:16px;
+
+font-weight:600;
+
+font-family:'Poppins',sans-serif;
+
+cursor:pointer;
+
+transition:.35s;
+
+box-shadow:0 10px 25px rgba(245,180,190,.35);
+
+}
+
+.forgive-btn:hover{
+
+transform:translateY(-5px) scale(1.03);
+
+box-shadow:0 18px 35px rgba(245,180,190,.45);
+
+}
+
+
+/* ===========================
+SCROLLBAR
+=========================== */
+
+::-webkit-scrollbar{
+
+width:10px;
+
+}
+
+::-webkit-scrollbar-track{
+
+background:#fff7f4;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+background:#efc2ca;
+
+border-radius:50px;
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+background:#e4a8b5;
+
+}
+
+
+/* ===========================
+RESPONSIVE
+=========================== */
+
+@media(max-width:992px){
+
+.big-card,
+.image-card,
+.final-card{
+
+grid-column:span 1;
+
+}
+
+.container{
+
+padding:45px 18px;
+
+}
+
+.top-title h1{
+
+font-size:38px;
+
+}
+
+.card{
+
+padding:24px;
+
+}
+
+}
+
+
+@media(max-width:768px){
+
+.grid{
+
+grid-template-columns:1fr;
+
+gap:20px;
+
+}
+
+.top-title h1{
+
+font-size:32px;
+
+}
+
+.top-title p{
+
+font-size:16px;
+
+line-height:28px;
+
+}
+
+.card h2{
+
+font-size:24px;
+
+line-height:32px;
+
+}
+
+.card p{
+
+font-size:15px;
+
+line-height:30px;
+
+}
+
+.mail{
+
+width:75px;
+
+height:75px;
+
+font-size:34px;
+
+}
+
+.masha-images img{
+
+width:120px;
+
+height:120px;
+
+}
+
+}
+
+
+@media(max-width:480px){
+
+.container{
+
+padding:35px 14px;
+
+}
+
+.card{
+
+border-radius:22px;
+
+padding:20px;
+
+}
+
+.card-number{
+
+font-size:13px;
+
+padding:6px 14px;
+
+}
+
+.top-title h1{
+
+font-size:28px;
+
+}
+
+.final-message{
+
+padding:25px;
+
+}
+
+footer{
+
+padding:20px;
+
+}
+
+}
+
+
+/* ===========================
+FINISHING TOUCH
+=========================== */
+
+.card,
+.mail,
+.final-message,
+footer{
+
+animation:fadeUp .8s ease both;
+
+}
+
+.card:nth-child(2){animation-delay:.1s;}
+.card:nth-child(3){animation-delay:.2s;}
+.card:nth-child(4){animation-delay:.3s;}
+.card:nth-child(5){animation-delay:.4s;}
+.card:nth-child(6){animation-delay:.5s;}
+.card:nth-child(7){animation-delay:.6s;}
+.card:nth-child(8){animation-delay:.7s;}
+.card:nth-child(9){animation-delay:.8s;}
+.card:nth-child(10){animation-delay:.9s;}
+
+@keyframes fadeUp{
+
+from{
+
+opacity:0;
+
+transform:translateY(35px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}  
